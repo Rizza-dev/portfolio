@@ -1,9 +1,15 @@
+import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
+import HeroSection from "@/components/HeroSection";
+import WorkSection from "@/components/WorkSection";
 
 export default function Home() {
   return (
-    <main className="px-4 sm:px-[3vw] md:px-[5vw] lg:px-[7vw] xl:px-[9vw] min-h-screen flex flex-col items-center justify-center ">
-      <h1 className="text-3xl font-bold">سلام دنیا</h1>
-      <p className="mt-2 text-zinc-500 dark:text-zinc-300">تمپلیت نکست با دارک مود</p>
+    <main className="px-4  sm:px-[3vw] overflow-hidden relative md:px-[5vw] lg:px-[7vw] xl:px-[9vw] w-full h-full flex flex-col items-center justify-center ">
+      <HeroSection />
+      <AboutSection />
+      <WorkSection />
+      <ContactSection />
     </main>
   )
 }
