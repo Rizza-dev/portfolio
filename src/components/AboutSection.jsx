@@ -57,8 +57,8 @@ const AboutSection = () => {
         className="w-[32px] h-[48px] absolute bottom-10 border border-slate-400 p-2 rounded-full flex items-center justify-end"
       >
         <motion.span
-          initial={{ y: 0 }}
-          animate={{ y: -10 }}
+          initial={{ y: -10 , opacity:1 }}
+          animate={{ y: 10 , opacity:0 }}
           transition={{
             duration: 0.7,
             repeat: Infinity,
