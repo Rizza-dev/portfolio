@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Lottie from "lottie-react";
 const AboutSection = () => {
   return (
     <section
@@ -54,7 +53,7 @@ const AboutSection = () => {
         </div>
       </div>
       <a
-        href="#work"
+        href="#overview"
         className="w-[32px] h-[48px] absolute bottom-10 border border-slate-400 p-2 rounded-full flex items-center justify-end"
       >
         <motion.span
