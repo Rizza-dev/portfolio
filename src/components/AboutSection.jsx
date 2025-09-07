@@ -7,7 +7,7 @@ const AboutSection = () => {
       id="about"
       className="h-screen pt-20 w-full relative flex flex-col justify-center items-center"
     >
-      <div className="relative w-full h-full flex items-center justify-between flex-col md:flex-row">
+      <div className="relative w-full h-full flex items-center justify-between flex-col lg:flex-row">
         <div className="w-full h-full flex items-start justify-center">
           <div className="w-96 h-[430px] lg:w-[600px] lg:h-[600px] overflow-hidden">
             <div

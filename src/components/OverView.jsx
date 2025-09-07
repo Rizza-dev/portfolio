@@ -45,12 +45,11 @@ const OverView = () => {
         </motion.div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 lg:gap-8 gap-y-6 md:grid-cols-4  ">
+      <motion.div ref={ref} className="grid grid-cols-2 gap-4 lg:gap-8 gap-y-6 md:grid-cols-4  ">
         {skils.map((item) => (
-          <Tilt className="shadow-lg shadow-violet-500/30">
+          <Tilt key={item.id} className="shadow-lg shadow-violet-300/30">
             <motion.div
-              ref={ref}
-              key={item.id}
+              
               initial={{ opacity: 0, x: -100 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{
@@ -58,7 +57,7 @@ const OverView = () => {
                 delay: item.id * 0.3,
                 ease: "easeIn",
               }}
-              className="p-[2px] bg-gradient-to-b from-violet-900 to-blue-800 rounded-lg"
+              className="p-[2px] bg-gradient-to-b from-[#6830E6] to-[#107FE0] rounded-lg"
             >
               <div className="bg-[#F6F7FF] py-4 px-10 flex items-center justify-between flex-col gap-6 rounded-lg overflow-hidden">
                 <Image width={180} height={180} src={item.icon} alt="" />
@@ -70,8 +69,7 @@ const OverView = () => {
             </motion.div>
           </Tilt>
         ))}
-      </div>
-      
+      </motion.div>
     </section>
   );
 };
