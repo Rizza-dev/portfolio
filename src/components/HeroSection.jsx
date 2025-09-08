@@ -21,8 +21,8 @@ const HeroSection = () => {
             "توسعه دهنده نکست جی اس",
             "عاشق رابط کاربری لوکس و مدرن",
           ]}
-          typeSpeed={100}
-          backSpeed={70}
+          typeSpeed={150}
+          backSpeed={180}
           loop
         />
       </div>
@@ -41,7 +41,7 @@ const HeroSection = () => {
           initial={{ y: -10 , opacity:1 }}
           animate={{ y: 10 , opacity:0 }}
           transition={{
-            duration: 0.7,
+            duration: 1,
             repeat: Infinity,
             repeatType: "reverse",
           }}

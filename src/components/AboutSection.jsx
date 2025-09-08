@@ -31,7 +31,7 @@ const AboutSection = () => {
             `}</style>
           </div>
         </div>
-        <div className="w-2/3 h-2/4  text-center max-w-screen-sm relative">
+        <div className="w-2/3 h-full mt-8 text-center max-w-screen-sm relative">
           <motion.h2
             initial={{ y: 0 }}
             animate={{ y: -10 }}
@@ -44,7 +44,7 @@ const AboutSection = () => {
           >
             {" "}
             این منم!! <br />{" "}
-            <span className="text-lg lg:text-2xl font-light leading-[30px]">
+            <span className="text-lg lg:text-xl font-light leading-[30px]">
               توسعه‌دهنده وب با تمرکز روی طراحی سایت‌های مدرن و لوکس. همیشه
               دنبال این بودم که تجربه‌ی آنلاین، فراتر از یک صفحه‌ی ساده باشه و
               حس خاصی منتقل کنه
@@ -54,13 +54,13 @@ const AboutSection = () => {
       </div>
       <a
         href="#overview"
-        className="w-[32px] h-[48px] absolute bottom-10 border border-slate-400 p-2 rounded-full flex items-center justify-end"
+        className="w-[32px] h-[48px] absolute bottom-4 border border-slate-400 p-2 rounded-full flex items-center justify-end"
       >
         <motion.span
           initial={{ y: -10 , opacity:1 }}
           animate={{ y: 10 , opacity:0 }}
           transition={{
-            duration: 0.7,
+            duration: 1,
             repeat: Infinity,
             repeatType: "reverse",
           }}

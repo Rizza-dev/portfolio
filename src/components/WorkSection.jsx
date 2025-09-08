@@ -65,7 +65,7 @@ const ProjectCard = ({ image, name, link, description, id }) => {
         }}
         className="sm:w-[360px] h-[500px] w-full p-5 rounded-2xl border-2 text-black"
       >
-        <div className="w-full h-[230px] aspect-video relative">
+        <div className="w-full h-[230px]  relative">
           <Image src={image} alt={name} fill className="object-cover rounded-lg " priority={true} />
         </div>
         <h5 className="mt-4 text-lg">
