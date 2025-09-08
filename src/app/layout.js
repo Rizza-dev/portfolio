@@ -2,10 +2,14 @@ import "./globals.css";
 import { artin, iranSans, iranYekan } from "../font";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { icons } from "lucide-react";
 
 export const metadata = {
   title: "rizza portfolio",
   description: "طراح سایت لوکس و مدرن",
+  icons: {
+    icon: "/logo.png",
+  }
 };
 
 export default function RootLayout({ children }) {
