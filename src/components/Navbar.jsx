@@ -11,7 +11,7 @@ const Navbar = () => {
           <Link className="lg:text-xl" href='#work' >نمونه کار</Link>
           <Link className="lg:text-xl" href='#contact' >تماس</Link>
         </div>
-        <Link href={'#home'}>Logo</Link>
+        <Link className="text-lg lg:text-xl tracking-wide" href={'/'}>Rizza <span className="text-slate-700">Luxe Code</span></Link>
       </div>
     </div>
   );

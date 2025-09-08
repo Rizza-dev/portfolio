@@ -47,7 +47,7 @@ const OverView = () => {
 
       <motion.div ref={ref} className="grid grid-cols-2 gap-4 lg:gap-8 gap-y-6 md:grid-cols-4  ">
         {skils.map((item) => (
-          <Tilt key={item.id} className="shadow-lg shadow-violet-300/30">
+          <Tilt key={item.id} className="">
             <motion.div
               
               initial={{ opacity: 0, x: -100 }}
