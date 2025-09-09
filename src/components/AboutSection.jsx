@@ -5,9 +5,9 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="h-fit  py-20  w-full relative flex flex-col justify-center items-center"
+      className="h-screen  py-20  w-full relative flex flex-col justify-center items-center"
     >
-      <div className="relative w-full h-fit flex items-center justify-start flex-col lg:flex-row">
+      <div className="relative w-full h-full flex items-center justify-around flex-col lg:flex-row">
         <div className="w-full h-fit flex items-start justify-center">
           <div className="w-96 h-[360px] lg:w-[600px] lg:h-[600px] overflow-hidden">
             <div
@@ -52,21 +52,7 @@ const AboutSection = () => {
           </motion.h2>
         </div>
       </div>
-      <a
-        href="#overview"
-        className="w-[32px] h-[48px] absolute bottom-0 border border-slate-400 p-2 rounded-full flex items-center justify-end"
-      >
-        <motion.span
-          initial={{ y: -10 , opacity:1 }}
-          animate={{ y: 10 , opacity:0 }}
-          transition={{
-            duration: 1,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          className="w-[14px] h-[14px] bg-slate-700 rounded-full"
-        />
-      </a>
+     
     </section>
   );
 };
