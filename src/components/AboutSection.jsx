@@ -3,15 +3,12 @@ import React from "react";
 import { motion } from "framer-motion";
 const AboutSection = () => {
   return (
-    <section
-      id="about"
-      className="h-screen  py-20  w-full relative flex flex-col justify-center items-center"
-    >
-      <div className="relative w-full h-full flex items-center justify-around flex-col lg:flex-row">
-        <div className="w-full h-fit flex items-start justify-center">
+    <section id="about" className="lg:h-screen h-[800px] py-20 w-full relative">
+      <div className="relative w-full h-full flex items-center justify-center flex-col gap-10 lg:flex-row">
+        <div className="w-full h-full flex items-center justify-center">
           <div className="w-96 h-[360px] lg:w-[600px] lg:h-[600px] overflow-hidden">
             <div
-              className="w-full h-full bg-cover bg-center  animate-blob"
+              className="w-full h-full bg-cover bg-center animate-blob"
               style={{ backgroundImage: "url('/rizza.png')" }}
             />
             <style jsx>{`
@@ -31,7 +28,7 @@ const AboutSection = () => {
             `}</style>
           </div>
         </div>
-        <div className="w-full h-fit mt-8 text-center max-w-screen-sm relative">
+        <div className="w-full h-full text-center max-w-screen-sm relative">
           <motion.h2
             initial={{ y: 0 }}
             animate={{ y: -10 }}
@@ -50,9 +47,25 @@ const AboutSection = () => {
               حس خاصی منتقل کنه
             </span>
           </motion.h2>
+          
         </div>
+        
       </div>
-     
+      <a
+        href="#overview"
+        className="w-[32px] h-[48px] absolute bottom-0 left-1/2 -translate-x-1/2  border border-slate-400 p-2 rounded-full flex items-center justify-end"
+      >
+        <motion.span
+          initial={{ y: -10, opacity: 1 }}
+          animate={{ y: 10, opacity: 0 }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          className="w-[14px] h-[14px] bg-slate-700 rounded-full"
+        />
+      </a>
     </section>
   );
 };
