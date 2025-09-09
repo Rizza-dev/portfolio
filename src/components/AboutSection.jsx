@@ -5,11 +5,11 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="h-screen pt-20 w-full relative flex flex-col justify-center items-center"
+      className="h-fit  py-20  w-full relative flex flex-col justify-center items-center"
     >
-      <div className="relative w-full h-full flex items-center justify-between flex-col lg:flex-row">
-        <div className="w-full h-full flex items-start justify-center">
-          <div className="w-96 h-[430px] lg:w-[600px] lg:h-[600px] overflow-hidden">
+      <div className="relative w-full h-fit flex items-center justify-start flex-col lg:flex-row">
+        <div className="w-full h-fit flex items-start justify-center">
+          <div className="w-96 h-[360px] lg:w-[600px] lg:h-[600px] overflow-hidden">
             <div
               className="w-full h-full bg-cover bg-center  animate-blob"
               style={{ backgroundImage: "url('/rizza.png')" }}
@@ -31,7 +31,7 @@ const AboutSection = () => {
             `}</style>
           </div>
         </div>
-        <div className="w-2/3 h-full mt-8 text-center max-w-screen-sm relative">
+        <div className="w-full h-fit mt-8 text-center max-w-screen-sm relative">
           <motion.h2
             initial={{ y: 0 }}
             animate={{ y: -10 }}
@@ -54,7 +54,7 @@ const AboutSection = () => {
       </div>
       <a
         href="#overview"
-        className="w-[32px] h-[48px] absolute bottom-4 border border-slate-400 p-2 rounded-full flex items-center justify-end"
+        className="w-[32px] h-[48px] absolute bottom-0 border border-slate-400 p-2 rounded-full flex items-center justify-end"
       >
         <motion.span
           initial={{ y: -10 , opacity:1 }}
